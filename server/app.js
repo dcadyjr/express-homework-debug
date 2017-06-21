@@ -4,8 +4,11 @@ var server = require('http').createServer(app);
 var fs = require('fs');
 var path = require('path');
 
+app.use(express.static(path.join(__dirname, "views")));
 
+app.set('views', path.join(__dirname, "views"));
 
+app.set('view engine', "hbs");
 
 
 
