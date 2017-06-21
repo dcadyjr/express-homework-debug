@@ -1,6 +1,10 @@
-var express = require('express'),
-    app     = express(),
-    server  = require('http').createServer(app);
+var express = require('express');
+var app = express();
+var server = require('http').createServer(app);
+var fs = require('fs');
+var path = require('path');
+
+
 
 
 
@@ -14,6 +18,6 @@ var express = require('express'),
 
 
 // first argument is the port number
-server.listen(5000, function(){
+server.listen(3000, function(){
   console.log('server is listening, but on what port, are you reading the code?')
 })
